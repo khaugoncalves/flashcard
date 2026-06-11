@@ -1,8 +1,8 @@
    box-sizing: borxer-box;
    margin: 0;
    padding: 0;
-
-
+  
+  }
 
   body  {
     display: flex;
@@ -10,51 +10,46 @@
     min-height: 100vh;
     background-color: blueviolet;
 
+  }
   .cabecalho {
     background-color: #333
     padding: 15px 25px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-
-
-
-
+  }
     cabecalho-link {
       color:blue
       text-ecoration: none;
-
     }
+
     footer{
       background-color:aqua;
       padding: 15px 25px;
       color:#333;
-
     }
-
-
 
     main{
       flex: 1;
       diplay: flex;
-      flx-direction: column;
+      flex-direction: column;
       alignn-items: center;
+
+    }
     
       h1 {
         color:beige;
         font-size: 24px;
+
       }
+
       h2 {
         margin-top: 10px;
         margin-bottom: 10px;
   
       }
 
-
-  
-
-
-    .cartao {}
+    .cartao {
 
         width: 260px;
         height: 360px;
@@ -62,18 +57,22 @@
         overflow: hidden;
         perspective: 1000px;
 
+    }
         .cartao-imagem {
           width: 100%;
           height: 80%;
           object-fit: cover;
           border-radius: 12px;
         }
+
         .cartao-interno {
           position: relative;
           width: 100%;
           height: 100%;
           transform:transform 0.8s;
           transform-style: preserve-3d;
+        }
+
 
           .cartao-frente,
           .cartao-verso {
@@ -86,23 +85,36 @@
             display:flex;
             flex-direction:column;
             gap: 12px;
-            padding: 12px;
+         
             background-color:aliceblue;
-
           }
+
+          .cartao-frente p,
+          .cartao-verso p,{
+            margin: 0;
+            font-size: 14px;
+            line-height: 1.3;
+            color: #222;
+          }
+
           .cartao-verso {
+          transform: rotateY(180deg);
+          }
+          
+          .cartao:hover .cartao-interno {
             transform: rotateY(180deg);
-
-          }
-          section {
-            display:flex;
+         }
+      
+        section {
+          display:flex;
             gap: 16px;
+        }
 
-          }
+          
 
 
           
-          }
-        }
+          
+        
 
-    }
+    
