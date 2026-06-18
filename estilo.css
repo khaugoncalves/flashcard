@@ -1,16 +1,16 @@
-   box-sizing: borxer-box;
+  {
+  box-sizing: borxer-box;
    margin: 0;
-   padding: 0;
-  
+   padding: 0; 
   }
 
   body  {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
-    background-color: blueviolet;
-
+ 
   }
+  
   .cabecalho {
     background-color: #333
     padding: 15px 25px;
@@ -18,7 +18,8 @@
     justify-content: space-between;
     align-items: center;
   }
-    cabecalho-link {
+  
+  .cabecalho-link {
       color:blue
       text-ecoration: none;
     }
@@ -34,30 +35,26 @@
       diplay: flex;
       flex-direction: column;
       alignn-items: center;
-
     }
-    
-      h1 {
+
+      
+    h1 {
         color:beige;
         font-size: 24px;
-
-      }
-
+    }
       h2 {
         margin-top: 10px;
         margin-bottom: 10px;
-  
       }
-
-    .cartao {
-
+   
+       .cartao {
         width: 260px;
         height: 360px;
         border-radius: 20px;
         overflow: hidden;
         perspective: 1000px;
 
-    }
+    } 
         .cartao-imagem {
           width: 100%;
           height: 80%;
@@ -71,10 +68,9 @@
           height: 100%;
           transform:transform 0.8s;
           transform-style: preserve-3d;
+
         }
-
-
-          .cartao-frente,
+         .cartao-frente,
           .cartao-verso {
             position:absolute
             width: 100%;
